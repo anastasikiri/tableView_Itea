@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlueTableViewCell" rowHeight="72" id="KGk-i7-Jjw" customClass="BlueTableViewCell" customModule="tableView_Itea" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-sr-slj">
+                        <rect key="frame" x="20" y="2" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="0yG-GD-9Mq"/>
+                            <constraint firstAttribute="height" constant="68" id="lbU-ED-kiq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience, skills" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyI-Po-EzM">
+                        <rect key="frame" x="100" y="25.5" width="250" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="yXL-XR-U6O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xyI-Po-EzM" firstAttribute="leading" secondItem="1ZW-sr-slj" secondAttribute="trailing" constant="12" id="3bg-Gr-Hdh"/>
+                    <constraint firstItem="1ZW-sr-slj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="5dy-hl-kKr"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xyI-Po-EzM" secondAttribute="trailing" constant="24" id="WAy-pf-Pzr"/>
+                    <constraint firstItem="xyI-Po-EzM" firstAttribute="centerY" secondItem="1ZW-sr-slj" secondAttribute="centerY" id="iaR-q7-XaG"/>
+                    <constraint firstItem="1ZW-sr-slj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="oYb-vF-fJt"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1ZW-sr-slj" secondAttribute="bottom" constant="1" id="sWM-3z-Nm8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cvDetailsImageView" destination="1ZW-sr-slj" id="xfN-lY-F5p"/>
+                <outlet property="cvDetailsLabel" destination="xyI-Po-EzM" id="DNT-xp-9Dw"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
